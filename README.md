@@ -1,6 +1,6 @@
 Note for Developers Level 2 participants
 ========================================
-Follow the instructions given in the course: Task 1 foor the best results.
+Follow the instructions given in the course: Task 1 for the best results.
 
 Introduction
 ============
