@@ -1,3 +1,9 @@
+Note for Developers Level 2 participants
+========================================
+Follow the instructions given in the course: Task 1 foor the best results.
+
+Introduction
+============
 A template for Moodle modules.  Updated from Moodle HQ's moodle-mod_widget template.
 
 Added:
