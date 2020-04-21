@@ -17,17 +17,17 @@
 /**
  * Defines the version and other meta-info about the plugin
  *
- * @package    mod_widget
+ * @package    mod_collaborate
  * @copyright  2019 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_widget
- * @see https://github.com/justinhunt/moodle-mod_widget
+ * @see https://github.com/moodlehq/moodle-mod_collaborate
+ * @see https://github.com/justinhunt/moodle-mod_collaborate
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'mod_widget';
+$plugin->component = 'mod_collaborate';
 $plugin->version = 2019061502;
 $plugin->release = 'v1.0'; // Basic activity plugin template.
-$plugin->requires = 2017111301; // Moodle 3.4, 3.5, 3.6, 3.7
+$plugin->requires = 2017111301; // Moodle 3.4, 3.5, 3.6, 3.7, 3.8
 $plugin->maturity = MATURITY_BETA;

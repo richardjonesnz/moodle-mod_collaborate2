@@ -15,29 +15,29 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Defines backup_widget_activity_task class
+ * Defines backup_collaborate_activity_task class
  *
- * @package   mod_widget
+ * @package   mod_collaborate
  * @category  backup
  * @copyright 2019 Richard Jones richardnz@outlook.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_widget
- * @see https://github.com/justinhunt/moodle-mod_widget */
+ * @see https://github.com/moodlehq/moodle-mod_collaborate
+ * @see https://github.com/justinhunt/moodle-mod_collaborate */
 
 defined('MOODLE_INTERNAL') || die;
 
-require_once($CFG->dirroot . '/mod/widget/backup/moodle2/backup_widget_stepslib.php');
-require_once($CFG->dirroot . '/mod/widget/backup/moodle2/backup_widget_settingslib.php');
+require_once($CFG->dirroot . '/mod/collaborate/backup/moodle2/backup_collaborate_stepslib.php');
+require_once($CFG->dirroot . '/mod/collaborate/backup/moodle2/backup_collaborate_settingslib.php');
 /**
- * Provides the steps to perform one complete backup of the widget instance
+ * Provides the steps to perform one complete backup of the collaborate instance
  *
- * @package   mod_widget
+ * @package   mod_collaborate
  * @category  backup
  * @copyright 2019 Richard Jones richardnz@outlook.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_widget
- * @see https://github.com/justinhunt/moodle-mod_widget */
-class backup_widget_activity_task extends backup_activity_task {
+ * @see https://github.com/moodlehq/moodle-mod_collaborate
+ * @see https://github.com/justinhunt/moodle-mod_collaborate */
+class backup_collaborate_activity_task extends backup_activity_task {
 
     /**
      * No specific settings for this activity
@@ -46,10 +46,10 @@ class backup_widget_activity_task extends backup_activity_task {
     }
 
     /**
-     * Defines a backup step to store the instance data in the widget.xml file
+     * Defines a backup step to store the instance data in the collaborate.xml file
      */
     protected function define_my_steps() {
-        $this->add_step(new backup_widget_activity_structure_step('widget_structure', 'widget.xml'));
+        $this->add_step(new backup_collaborate_activity_structure_step('collaborate_structure', 'collaborate.xml'));
     }
 
     /**
@@ -63,13 +63,13 @@ class backup_widget_activity_task extends backup_activity_task {
 
         $base = preg_quote($CFG->wwwroot, '/');
 
-        // Link to the list of widgets.
-        $search = '/('.$base.'\/mod\/widget\/index.php\?id\=)([0-9]+)/';
-        $content = preg_replace($search, '$@WIDGETINDEX*$2@$', $content);
+        // Link to the list of collaborates.
+        $search = '/('.$base.'\/mod\/collaborate\/index.php\?id\=)([0-9]+)/';
+        $content = preg_replace($search, '$@COLLABORATEINDEX*$2@$', $content);
 
-        // Link to widget view by moduleid.
-        $search = '/('.$base.'\/mod\/widget\/view.php\?id\=)([0-9]+)/';
-        $content = preg_replace($search, '$@WIDGETVIEWBYID*$2@$', $content);
+        // Link to collaborate view by moduleid.
+        $search = '/('.$base.'\/mod\/collaborate\/view.php\?id\=)([0-9]+)/';
+        $content = preg_replace($search, '$@COLLABORATEVIEWBYID*$2@$', $content);
 
         return $content;
     }

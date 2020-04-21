@@ -20,36 +20,36 @@
  * @package    mod_simplelesson
  * @copyright  2019 Richard Jones <richardnz@outlook.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_widget
- * @see https://github.com/justinhunt/moodle-mod_widget
+ * @see https://github.com/moodlehq/moodle-mod_collaborate
+ * @see https://github.com/justinhunt/moodle-mod_collaborate
  */
-use \mod_widget\local\debugging;
+use \mod_collaborate\local\debugging;
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * Renderer for widget mod.
+ * Renderer for collaborate mod.
  */
-class mod_widget_renderer extends plugin_renderer_base {
+class mod_collaborate_renderer extends plugin_renderer_base {
 
     /**
      * Displays the main view page content.
      *
-     * @param $widget the widget instance std Object
+     * @param $collaborate the collaborate instance std Object
      * @param $cm the course module std Object
      * @return none
      */
-    public function render_view_page_content($widget, $cm) {
+    public function render_view_page_content($collaborate, $cm) {
 
         $data = new stdClass();
 
-        $data->heading = $widget->title;
+        $data->heading = $collaborate->title;
         // Moodle handles processing of std intro field.
-        $data->body = format_module_intro('widget',
-                $widget, $cm->id);
+        $data->body = format_module_intro('collaborate',
+                $collaborate, $cm->id);
 
         // Display the view page content.
         echo $this->output->header();
-        echo $this->render_from_template('mod_widget/view', $data);
+        echo $this->render_from_template('mod_collaborate/view', $data);
         echo $this->output->footer();
     }
 }

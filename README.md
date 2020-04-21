@@ -4,7 +4,7 @@ Follow the instructions given in the course: Task 1 for the best results.
 
 Introduction
 ============
-A template for Moodle modules.  Updated from Moodle HQ's moodle-mod_widget template.
+A template for Moodle modules.  Updated from Moodle HQ's moodle-mod_collaborate template.
 
 Added:
 
@@ -17,17 +17,17 @@ Instructions for installing:
 
 Download the zip file or clone the repository into your moodle/mod folder using the instructions given under the button "Clone or download".
 
-Assuming you are going to change your module name from widget to something more relevant, do the following.
+Assuming you are going to change your module name from collaborate to something more relevant, do the following.
 
 Rename these files:
 ===================
 All 4 files in backup/moodle2 should have the name of your new module.
 
-The lang/en/widget.php file should be renamed to the name of your new module.
+The lang/en/collaborate.php file should be renamed to the name of your new module.
 
-Replace widget with your new module name
+Replace collaborate with your new module name
 ========================================
-Carry out a search and replace for "widget" replacing it with the name of your new module.  You can do this in a number of ways depending on your text editor.  If you don't have one handy, download Brackets (http://brackets.io/) which is free, open source and handles this stuff well.
+Carry out a search and replace for "collaborate" replacing it with the name of your new module.  You can do this in a number of ways depending on your text editor.  If you don't have one handy, download Brackets (http://brackets.io/) which is free, open source and handles this stuff well.
 
 Navigate to your admin dashboard and install the new module.
 
@@ -38,7 +38,7 @@ You may notice a reference to a local class debugging.  This is a simple script 
 It looks like this"
 
 <pre>
-namespace mod_widget\local;
+namespace mod_collaborate\local;
 
 class debugging {
     public static function logit($message, $value) {
@@ -59,7 +59,7 @@ Place the above code in a file called debugging.php.
 
 Modify the file location (mylog.log) if desired.  Anywhere you want to view the contents of an object use:
 <pre>
-\mod_widget\local\debugging::logit("What is in a widegt: ", $widget);
+\mod_collaborate\local\debugging::logit("What is in a widegt: ", $collaborate);
 </pre>
 Using Xdebug
 ============

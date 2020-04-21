@@ -16,32 +16,32 @@
 
 
 /**
- * English strings for widget
+ * English strings for collaborate
  *
  * You can have a rather longer description of the file as well,
  * if you like, and it can span multiple lines.
  *
- * @package    mod_widget
+ * @package    mod_collaborate
  * @copyright  2019 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_widget
- * @see https://github.com/justinhunt/moodle-mod_widget
+ * @see https://github.com/moodlehq/moodle-mod_collaborate
+ * @see https://github.com/justinhunt/moodle-mod_collaborate
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'widget';
-$string['modulenameplural'] = 'widgets';
-$string['modulename_help'] = 'Use the widget module for... | The widget module allows...';
-$string['widget:addinstance'] = 'Add a new widget';
-$string['widget:submit'] = 'Submit widget';
-$string['widget:view'] = 'View widget';
-$string['widgetfieldset'] = 'Custom example fieldset';
-$string['widgetname'] = 'widget name';
-$string['widgetname_help'] = 'This is the content of the help tooltip associated with the widgetname field. Markdown syntax is supported.';
-$string['widget'] = 'widget';
-$string['pluginadministration'] = 'widget administration';
-$string['pluginname'] = 'widget';
+$string['modulename'] = 'collaborate';
+$string['modulenameplural'] = 'collaborates';
+$string['modulename_help'] = 'Use the collaborate module for... | The collaborate module allows...';
+$string['collaborate:addinstance'] = 'Add a new collaborate';
+$string['collaborate:submit'] = 'Submit collaborate';
+$string['collaborate:view'] = 'View collaborate';
+$string['collaboratefieldset'] = 'Custom example fieldset';
+$string['collaboratename'] = 'collaborate name';
+$string['collaboratename_help'] = 'This is the content of the help tooltip associated with the collaboratename field. Markdown syntax is supported.';
+$string['collaborate'] = 'collaborate';
+$string['pluginadministration'] = 'collaborate administration';
+$string['pluginname'] = 'collaborate';
 
-// Mod form specific widget settings.
+// Mod form specific collaborate settings.
 $string['title'] = 'Activity Title: ';
