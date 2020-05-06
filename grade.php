@@ -17,10 +17,10 @@
 /**
  * Redirect the user to the appropriate submission related page.
  *
- * @package    mod_collaborate
+* @package    mod_collaborate
  * @copyright  2019 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_collaborate
+ * @see https://github.com/moodlehq/moodle-mod_newmodule
  * @see https://github.com/justinhunt/moodle-mod_collaborate
  */
 require_once(__DIR__ . "../../../config.php");

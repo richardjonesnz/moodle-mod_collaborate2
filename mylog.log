@@ -1,121 +1,13 @@
-My collaborate: stdClass Object
+What is in a collaborate stdClass Object
 (
     [id] => 1
-    [course] => 3
-    [name] => Test collaborate
-    [intro] => <p>A collaborate test.</p><p><img src="@@PLUGINFILE@@/replace.PNG" alt="replace" class="img-responsive atto_image_button_text-bottom" width="475" height="231"><br></p>
+    [course] => 8
+    [name] => test collaborate
+    [intro] => <p>the initial state of the plugin. <br></p>
+<p><img src="@@PLUGINFILE@@/chucks2.jpg" alt="chickens" class="img-responsive atto_image_button_text-bottom" width="320" height="240"></p>
     [introformat] => 1
-    [title] => My collaborate
-    [timecreated] => 1560635386
-    [timemodified] => 0
+    [title] =>
+    [timecreated] => 1587509883
+    [timemodified] => 1587509989
     [grade] => 100
 )
-
-My instance: stdClass Object
-(
-    [id] => 22
-    [course] => 3
-    [module] => 28
-    [instance] => 1
-    [section] => 3
-    [idnumber] =>
-    [added] => 1560635386
-    [score] => 0
-    [indent] => 0
-    [visible] => 1
-    [visibleoncoursepage] => 1
-    [visibleold] => 1
-    [groupmode] => 0
-    [groupingid] => 0
-    [completion] => 1
-    [completiongradeitemnumber] =>
-    [completionview] => 0
-    [completionexpected] => 0
-    [showdescription] => 0
-    [availability] =>
-    [deletioninprogress] => 0
-    [name] => Test collaborate
-    [modname] => collaborate
-)
-
-My instance: stdClass Object
-(
-    [id] => 22
-    [course] => 3
-    [module] => 28
-    [instance] => 1
-    [section] => 3
-    [idnumber] =>
-    [added] => 1560635386
-    [score] => 0
-    [indent] => 0
-    [visible] => 1
-    [visibleoncoursepage] => 1
-    [visibleold] => 1
-    [groupmode] => 0
-    [groupingid] => 0
-    [completion] => 1
-    [completiongradeitemnumber] =>
-    [completionview] => 0
-    [completionexpected] => 0
-    [showdescription] => 0
-    [availability] =>
-    [deletioninprogress] => 0
-    [name] => Test collaborate
-    [modname] => collaborate
-)
-
-My instance: stdClass Object
-(
-    [id] => 23
-    [course] => 3
-    [module] => 28
-    [instance] => 2
-    [section] => 3
-    [idnumber] =>
-    [added] => 1560635386
-    [score] => 0
-    [indent] => 0
-    [visible] => 1
-    [visibleoncoursepage] => 1
-    [visibleold] => 1
-    [groupmode] => 0
-    [groupingid] => 0
-    [completion] => 1
-    [completiongradeitemnumber] =>
-    [completionview] => 0
-    [completionexpected] => 0
-    [showdescription] => 0
-    [availability] =>
-    [deletioninprogress] => 0
-    [name] => Test collaborate (copy)
-    [modname] => collaborate
-)
-
-My instance: stdClass Object
-(
-    [id] => 23
-    [course] => 3
-    [module] => 28
-    [instance] => 2
-    [section] => 3
-    [idnumber] =>
-    [added] => 1560635386
-    [score] => 0
-    [indent] => 0
-    [visible] => 1
-    [visibleoncoursepage] => 1
-    [visibleold] => 1
-    [groupmode] => 0
-    [groupingid] => 0
-    [completion] => 1
-    [completiongradeitemnumber] =>
-    [completionview] => 0
-    [completionexpected] => 0
-    [showdescription] => 0
-    [availability] =>
-    [deletioninprogress] => 0
-    [name] => Test collaborate (copy)
-    [modname] => collaborate
-)
-

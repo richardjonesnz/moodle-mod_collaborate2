@@ -15,20 +15,36 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Provides code to be executed during the module uninstallation
+ * Page viewed events class
  *
- * @see uninstall_plugin()
- *
- * @package    mod_collaborate
+* @package    mod_collaborate
  * @copyright  2019 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @see https://github.com/moodlehq/moodle-mod_newmodule
  * @see https://github.com/justinhunt/moodle-mod_collaborate
  */
 
-/**
- * Custom uninstallation procedure
- */
-function xmldb_collaborate_uninstall() {
-    return true;
+namespace mod_collaborate\event;
+defined('MOODLE_INTERNAL') || die();
+
+class page_viewed extends \core\event\base {
+    protected function init() {
+        $this->data['crud'] = 'r';
+        $this->data['edulevel'] = self::LEVEL_PARTICIPATING;
+    }
+
+    public static function get_name() {
+        return get_string('pageviewed', 'mod_collaborate');
+    }
+    /**
+     * Returns non-localised event description with id's for admin use only.
+     *
+     * @return string
+     */
+    public function get_description() {
+        return "The user with id '$this->userid' has
+                viewed a page with the id '$this->objectid'
+                in the Collaborate activity with course
+                module id '$this->contextinstanceid'.";
+    }
 }

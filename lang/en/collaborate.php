@@ -21,10 +21,10 @@
  * You can have a rather longer description of the file as well,
  * if you like, and it can span multiple lines.
  *
- * @package    mod_collaborate
+* @package    mod_collaborate
  * @copyright  2019 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_collaborate
+ * @see https://github.com/moodlehq/moodle-mod_newmodule
  * @see https://github.com/justinhunt/moodle-mod_collaborate
  */
 
@@ -38,10 +38,14 @@ $string['collaborate:submit'] = 'Submit collaborate';
 $string['collaborate:view'] = 'View collaborate';
 $string['collaboratefieldset'] = 'Custom example fieldset';
 $string['collaboratename'] = 'collaborate name';
-$string['collaboratename_help'] = 'This is the content of the help tooltip associated with the collaboratename field. Markdown syntax is supported.';
+$string['collaboratename_help'] = 'Please select a suitable name for your collaborate activity.  This name will appear in your course.';
+$string['title_help'] = 'Please select a suitable title for your collaborate main page.';
 $string['collaborate'] = 'collaborate';
 $string['pluginadministration'] = 'collaborate administration';
 $string['pluginname'] = 'collaborate';
 
 // Mod form specific collaborate settings.
 $string['title'] = 'Activity Title: ';
+
+// Events.
+$string['pageviewed'] = 'Collaborate viewed';

@@ -23,8 +23,9 @@
  * @package    mod_collaborate
  * @copyright  2019 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_collaborate
- * @see https://github.com/justinhunt/moodle-mod_collaborate */
+ * @see https://github.com/moodlehq/moodle-mod_newmodule
+ * @see https://github.com/justinhunt/moodle-mod_collaborate
+ */
 
 defined('MOODLE_INTERNAL') || die();
 
@@ -72,6 +73,8 @@ class mod_collaborate_mod_form extends moodleform_mod {
         $mform->addElement('text', 'title',
                 get_string('title', 'mod_collaborate'));
         $mform->setType('title', PARAM_TEXT);
+        $mform->addHelpButton('title', 'title', 'mod_collaborate');
+
 
         // Add standard grading elements.
         $this->standard_grading_coursemodule_elements();

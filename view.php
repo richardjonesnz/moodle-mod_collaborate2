@@ -20,10 +20,10 @@
  * @package    mod_collaborate
  * @copyright  2019 Richard Jones richardnz@outlook.com
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @see https://github.com/moodlehq/moodle-mod_collaborate
+ * @see https://github.com/moodlehq/moodle-mod_newmodule
  * @see https://github.com/justinhunt/moodle-mod_collaborate */
 
-
+use \mod_collaborate\event;
 require_once('../../config.php');
 require_once(dirname(__FILE__).'/lib.php');
 
@@ -56,6 +56,14 @@ require_login($course, true, $cm);
 $PAGE->set_title(format_string($collaborate->name));
 $PAGE->set_heading(format_string($course->fullname));
 
+// Let's consider the activity "viewed" at this point.
+$completion = new completion_info($course);
+$completion->set_module_viewed($cm);
+
+// Let's add the module viewed event.
+$event = \mod_collaborate\event\page_viewed::create(['context' => $PAGE->context]);
+$event->trigger();
+
 // The renderer performs output to the page.
 $renderer = $PAGE->get_renderer('mod_collaborate');
 
@@ -63,5 +71,6 @@ $renderer = $PAGE->get_renderer('mod_collaborate');
 if (!$collaborate->intro) {
     $collaborate->intro = '';
 }
+
 // Call the renderer method to display the collaborate intro content.
 $renderer->render_view_page_content($collaborate, $cm);
