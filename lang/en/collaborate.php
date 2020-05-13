@@ -50,3 +50,10 @@ $string['texteditor'] = 'Instructions {$a}';
 
 // Events.
 $string['pageviewed'] = 'Collaborate viewed';
+
+// User button labels.
+$string['studenta'] = 'Partner A';
+$string['studentb'] = 'Partner B';
+
+// Showpage strings.
+$string['returnview'] = 'Main page';
