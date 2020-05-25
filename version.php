@@ -27,7 +27,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'mod_collaborate';
-$plugin->version = 2020052103;
+$plugin->version = 2020052104;
 $plugin->release = 'v1.0'; // Basic activity plugin template.
 $plugin->requires = 2017111301; // Moodle 3.4, 3.5, 3.6, 3.7, 3.8
 $plugin->maturity = MATURITY_BETA;

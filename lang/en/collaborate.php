@@ -30,22 +30,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+// General strings.
 $string['modulename'] = 'Collaborate';
 $string['modulenameplural'] = 'Collaborations';
 $string['modulename_help'] = 'Use the collaborate module for pair work in class or online.  The module allows students to make a submission on two different resources provided by the teacher.  The students can then discuss and perhaps refine each others submissions.';
-$string['collaborate:addinstance'] = 'Add a new collaborate';
-$string['collaborate:submit'] = 'Submit collaborate';
-$string['collaborate:view'] = 'View collaborate';
+
 $string['collaboratefieldset'] = 'Custom example fieldset';
 $string['collaboratename'] = 'collaborate name';
 $string['collaboratename_help'] = 'Please select a suitable name for your collaborate activity.  This name will appear in your course.';
-$string['title_help'] = 'Please select a suitable title for your collaborate main page.';
-$string['collaborate'] = 'collaborate';
-$string['pluginadministration'] = 'collaborate administration';
+$string['collaborate'] = 'Collaborate';
+$string['pluginadministration'] = 'Collaborate administration';
 $string['pluginname'] = 'collaborate';
 
 // Mod form specific collaborate settings.
 $string['title'] = 'Activity Title: ';
+$string['title_help'] = 'Please select a suitable title for your collaborate main page.';
 $string['texteditor'] = 'Instructions {$a}';
 
 // Events.
@@ -57,7 +56,16 @@ $string['studentb'] = 'Partner B';
 
 // Showpage strings.
 $string['returnview'] = 'Main page';
+$string['user'] = 'User: {$a}';
 
 // Admin settings.
 $string['enablereports'] = 'Enable reports';
 $string['enablereports_desc'] = 'Check this box to allow teachers to view the reports tab';
+
+// Permissions strings.
+$string['collaborate:addinstance'] = 'Add a new collaborate';
+$string['collaborate:view'] = 'View collaborate';
+
+// Tabs.
+$string['viewtab'] = 'View';
+$string['reportstab'] = 'Reports';
