@@ -30,9 +30,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'collaborate';
-$string['modulenameplural'] = 'collaborates';
-$string['modulename_help'] = 'Use the collaborate module for... | The collaborate module allows...';
+$string['modulename'] = 'Collaborate';
+$string['modulenameplural'] = 'Collaborations';
+$string['modulename_help'] = 'Use the collaborate module for pair work in class or online.  The module allows students to make a submission on two different resources provided by the teacher.  The students can then discuss and perhaps refine each others submissions.';
 $string['collaborate:addinstance'] = 'Add a new collaborate';
 $string['collaborate:submit'] = 'Submit collaborate';
 $string['collaborate:view'] = 'View collaborate';
@@ -57,3 +57,7 @@ $string['studentb'] = 'Partner B';
 
 // Showpage strings.
 $string['returnview'] = 'Main page';
+
+// Admin settings.
+$string['enablereports'] = 'Enable reports';
+$string['enablereports_desc'] = 'Check this box to allow teachers to view the reports tab';
