@@ -27,8 +27,15 @@ defined('MOODLE_INTERNAL') || die;
 require_once($CFG->dirroot.'/mod/collaborate/lib.php');
 
 if ($ADMIN->fulltree) {
+<<<<<<< HEAD
     $settings->add(new admin_setting_configcheckbox('mod_collaborate_enablereports',
         get_string('enablereports', 'mod_collaborate'),
         get_string('enablereports_desc', 'mod_collaborate'), 0));
 }
 
+=======
+    $settings->add(new admin_setting_configcheckbox('mod_collaborate/enablereports',
+        get_string('enablereports', 'mod_collaborate'),
+        get_string('enablereports_desc', 'mod_collaborate'), 0));
+}
+>>>>>>> add_tabs

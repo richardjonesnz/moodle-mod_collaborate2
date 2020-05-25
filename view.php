@@ -24,6 +24,7 @@
  * @see https://github.com/justinhunt/moodle-mod_collaborate */
 
 use \mod_collaborate\event;
+use \mod_collaborate\local\debugging;
 require_once('../../config.php');
 require_once(dirname(__FILE__).'/lib.php');
 
@@ -79,5 +80,20 @@ if ($config->enablereports) {
     }
 }
 
+<<<<<<< HEAD
 // New parameter to determine status of tabs.
 $renderer->render_view_page_content($collaborate, $cm, $reportstab);
+=======
+// Show reports tab if permission exists and admin has allowed.
+$reportstab = false;
+$config = get_config('mod_collaborate');
+debugging::logit("Config: ", $config);
+if ($config->enablereports) {
+    if (has_capability('mod/collaborate:viewreportstab', $context)) {
+        $reportstab = true;
+    }
+}
+
+// Call the renderer method to display the collaborate intro content.
+$renderer->render_view_page_content($collaborate, $cm, $reportstab);
+>>>>>>> add_tabs
