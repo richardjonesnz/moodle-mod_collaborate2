@@ -45,6 +45,8 @@ $string['pluginname'] = 'collaborate';
 // Permissions strings.
 $string['collaborate:addinstance'] = 'Add a new collaborate';
 $string['collaborate:view'] = 'View collaborate';
+$string['collaborate:viewreportstab'] = 'View reports';
+
 
 // Mod form specific collaborate settings.
 $string['title'] = 'Activity Title: ';
@@ -59,3 +61,12 @@ $string['studentb'] = 'Partner B';
 
 // Showpage strings.
 $string['returnview'] = 'Main page';
+
+// Admin Settings.
+// User button labels.
+$string['enablereports'] = 'Enable reports';
+$string['enablereports_desc'] = 'Check this box to allow teachers to view the reports';
+
+// Tab labels.
+$string['viewtab'] = 'View';
+$string['reportstab'] = 'Reports';

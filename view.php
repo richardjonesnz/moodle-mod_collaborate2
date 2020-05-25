@@ -24,6 +24,7 @@
  * @see https://github.com/justinhunt/moodle-mod_collaborate */
 
 use \mod_collaborate\event;
+use \mod_collaborate\local\debugging;
 require_once('../../config.php');
 require_once(dirname(__FILE__).'/lib.php');
 
@@ -47,6 +48,9 @@ if ($id) {
     $cm = get_coursemodule_from_instance('collaborate', $collaborate->id,
             $course->id, false, MUST_EXIST);
 }
+
+// Add the module context for the reports tab permission.
+$context = context_module::instance($cm->id);
 
 // Print the page header.
 $PAGE->set_url('/mod/collaborate/view.php', array('id' => $cm->id));
@@ -72,5 +76,15 @@ if (!$collaborate->intro) {
     $collaborate->intro = '';
 }
 
+// Show reports tab if permission exists and admin has allowed.
+$reportstab = false;
+$config = get_config('mod_collaborate');
+debugging::logit("Config: ", $config);
+if ($config->enablereports) {
+    if (has_capability('mod/collaborate:viewreportstab', $context)) {
+        $reportstab = true;
+    }
+}
+
 // Call the renderer method to display the collaborate intro content.
-$renderer->render_view_page_content($collaborate, $cm);
+$renderer->render_view_page_content($collaborate, $cm, $reportstab);

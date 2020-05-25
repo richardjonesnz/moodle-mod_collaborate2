@@ -28,10 +28,23 @@
 
     Example context (json):
         {
+         "url_view": "#",
          "heading": "My heading",
-         "body": "My html body"
+         "body": "My html body",
+         "url_a": "#",
+         "url_b": "#"
         }
 }}
+{{#reportstab}}
+<div class = "container">
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a class="nav-link active" href="{{url_view}}">
+        {{# str }} viewtab, mod_collaborate {{/ str }}</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{url_reports}}">
+        {{# str }} reportstab, mod_collaborate {{/ str }}</a></li>
+  </ul>
+</div>
+{{/reportstab}}
 <div class="card">
     <div class="card-body">
         <h2 class="card-title">{{heading}}</h2>
