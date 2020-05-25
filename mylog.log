@@ -9,3 +9,21 @@ Config: stdClass Object
     [version] => 2020052512
 )
 
+Config: stdClass Object
+(
+    [enablereports] => 1
+    [version] => 2020052512
+)
+
+Config: stdClass Object
+(
+    [enablereports] => 1
+    [version] => 2020052512
+)
+
+Config: stdClass Object
+(
+    [enablereports] => 1
+    [version] => 2020052512
+)
+
