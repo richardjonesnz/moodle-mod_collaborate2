@@ -30,12 +30,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'collaborate';
-$string['modulenameplural'] = 'collaborates';
+$string['modulename'] = 'Collaborate';
+$string['modulenameplural'] = 'Collaborations';
 $string['modulename_help'] = 'Use the collaborate module for... | The collaborate module allows...';
-$string['collaborate:addinstance'] = 'Add a new collaborate';
-$string['collaborate:submit'] = 'Submit collaborate';
-$string['collaborate:view'] = 'View collaborate';
+
 $string['collaboratefieldset'] = 'Custom example fieldset';
 $string['collaboratename'] = 'collaborate name';
 $string['collaboratename_help'] = 'Please select a suitable name for your collaborate activity.  This name will appear in your course.';
@@ -43,6 +41,10 @@ $string['title_help'] = 'Please select a suitable title for your collaborate mai
 $string['collaborate'] = 'collaborate';
 $string['pluginadministration'] = 'collaborate administration';
 $string['pluginname'] = 'collaborate';
+
+// Permissions strings.
+$string['collaborate:addinstance'] = 'Add a new collaborate';
+$string['collaborate:view'] = 'View collaborate';
 
 // Mod form specific collaborate settings.
 $string['title'] = 'Activity Title: ';
