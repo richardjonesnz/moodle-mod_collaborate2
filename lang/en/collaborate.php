@@ -46,6 +46,7 @@ $string['pluginname'] = 'collaborate';
 $string['collaborate:addinstance'] = 'Add a new collaborate';
 $string['collaborate:view'] = 'View collaborate';
 $string['collaborate:viewreportstab'] = 'View reports';
+$string['collaborate:gradesubmission'] = 'Grade a submission';
 
 
 // Mod form specific collaborate settings.
