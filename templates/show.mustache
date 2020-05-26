@@ -30,21 +30,26 @@
         {
          "heading": "My heading",
          "user": "Student A",
-         "body": "My html body"
+         "body": "My html body",
+         "form": "An HTML form",
          "url_view": #,
         }
 }}
 <div class = "container">
   <div class="card">
     <div class="card-body">
-      <h2 class="card-title">{{heading}}</h2>
-      <h3>{{user}}</h3>
-      {{{body}}}
-      <p>
-        <a href = "{{url_view}}" class="btn btn-primary">
-          {{# str }} returnview, mod_collaborate {{/ str }}
-        </a>
-      </p>
+        <h2 class="card-title">{{heading}}</h2>
+        <h3>{{user}}</h3>
+        {{{body}}}
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+        {{{form}}}
+        <br />
+        <p>
+            <a href = "{{url_view}}" class="btn btn-primary">{{# str }} returnview, mod_collaborate {{/ str }}</a>
+        </p>
     </div>
   </div>
 </div>

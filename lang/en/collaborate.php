@@ -70,3 +70,8 @@ $string['enablereports_desc'] = 'Check this box to allow teachers to view the re
 // Tab labels.
 $string['viewtab'] = 'View';
 $string['reportstab'] = 'Reports';
+
+// Submissions form.
+$string['submission'] = 'Your submission';
+$string['submissionsave'] = 'Save submission';
+$string['submissionupdated'] = 'Submission updated';

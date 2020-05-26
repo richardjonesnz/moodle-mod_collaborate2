@@ -73,7 +73,7 @@ class mod_collaborate_renderer extends plugin_renderer_base {
         echo $this->output->footer();
     }
 
-    public function render_page_content($collaborate, $cm, $page) {
+    public function render_page_content($collaborate, $cm, $page, $form) {
 
         $data = new stdClass();
 
@@ -96,6 +96,9 @@ class mod_collaborate_renderer extends plugin_renderer_base {
                 $collaborate->instructionsbformat;
 
         $data->body = format_text($content, $format, $formatoptions);
+
+        // Get the form html.
+        $data->form = $form->render();
 
         // Get a return url back to view page.
         $urlv = new \moodle_url('/mod/collaborate/view.php', ['id' => $cm->id]);
