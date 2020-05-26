@@ -75,3 +75,12 @@ $string['reportstab'] = 'Reports';
 $string['submission'] = 'Your submission';
 $string['submissionsave'] = 'Save submission';
 $string['submissionupdated'] = 'Submission updated';
+
+// Strings for usubmission report.
+$string['submissions'] = 'List of submissions';
+$string['id'] = 'ID';
+$string['title'] = 'Title';
+$string['submission'] = 'Submission text (part)';
+$string['firstname'] = 'First name';
+$string['lastname'] = 'Last name';
+$string['grade'] = 'Grade';
