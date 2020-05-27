@@ -525,3 +525,54 @@ Collaborate:  stdClass Object
     [grade] => 50
 )
 
+Collaborate:  stdClass Object
+(
+    [id] => 1
+    [course] => 8
+    [name] => Test collaborate here by ad hoc
+    [intro] => <p>This is what we have to do:</p><p><img src="@@PLUGINFILE@@/uninstalling.PNG" alt="uninstall" class="img-responsive atto_image_button_text-bottom" width="400" height="265"><br></p>
+    [introformat] => 1
+    [title] => This is a test
+    [instructionsa] => <p>5445 46456 456 4564</p><p><img src="@@PLUGINFILE@@/social%20history%20explorartion.fw.png" alt="a bunch of people" class="img-responsive atto_image_button_text-bottom" width="500" height="127"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p>This is a test fro partner B</p><p>Here is your picture to comment on:</p><p><img src="@@PLUGINFILE@@/MoodleBlocks.fw.png" alt="blocks" class="img-responsive atto_image_button_text-bottom" width="456" height="232"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1589338721
+    [timemodified] => 1590540218
+    [grade] => 50
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 1
+    [course] => 8
+    [name] => Test collaborate here by ad hoc
+    [intro] => <p>This is what we have to do:</p><p><img src="@@PLUGINFILE@@/uninstalling.PNG" alt="uninstall" class="img-responsive atto_image_button_text-bottom" width="400" height="265"><br></p>
+    [introformat] => 1
+    [title] => This is a test
+    [instructionsa] => <p>5445 46456 456 4564</p><p><img src="@@PLUGINFILE@@/social%20history%20explorartion.fw.png" alt="a bunch of people" class="img-responsive atto_image_button_text-bottom" width="500" height="127"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p>This is a test fro partner B</p><p>Here is your picture to comment on:</p><p><img src="@@PLUGINFILE@@/MoodleBlocks.fw.png" alt="blocks" class="img-responsive atto_image_button_text-bottom" width="456" height="232"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1589338721
+    [timemodified] => 1590540218
+    [grade] => 50
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 1
+    [course] => 8
+    [name] => Test collaborate here by ad hoc
+    [intro] => <p>This is what we have to do:</p><p><img src="@@PLUGINFILE@@/uninstalling.PNG" alt="uninstall" class="img-responsive atto_image_button_text-bottom" width="400" height="265"><br></p>
+    [introformat] => 1
+    [title] => This is a test
+    [instructionsa] => <p>5445 46456 456 4564</p><p><img src="@@PLUGINFILE@@/social%20history%20explorartion.fw.png" alt="a bunch of people" class="img-responsive atto_image_button_text-bottom" width="500" height="127"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p>This is a test fro partner B</p><p>Here is your picture to comment on:</p><p><img src="@@PLUGINFILE@@/MoodleBlocks.fw.png" alt="blocks" class="img-responsive atto_image_button_text-bottom" width="456" height="232"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1589338721
+    [timemodified] => 1590540218
+    [grade] => 50
+)
+

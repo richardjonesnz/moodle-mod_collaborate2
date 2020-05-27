@@ -98,3 +98,6 @@ $string['grade_saved'] = 'Grade saved';
 $string['namechange'] = 'Change module name';
 $string['action'] = 'Action';
 $string['edit'] = 'Edit module name';
+$string['collaboratetask'] = 'A Collaborate task';
+$string['submission_submitted'] = 'Student submission';
+$string['submission_graded'] = 'Submission graded';
