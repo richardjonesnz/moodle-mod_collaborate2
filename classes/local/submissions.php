@@ -71,6 +71,24 @@ class submissions {
         return $data->id;
     }
     /**
+     * Get a user submission given its id.
+     * @param object $collaborate the Collaborate instance
+     * @param int $sid the submission id
+     * @return object the required record
+     */
+    public static function get_submission_to_grade($collaborate, $sid) {
+        global $DB;
+        $record = $DB->get_record('collaborate_submissions', ['id' => $sid], '*', MUST_EXIST);
+        $data = new \stdClass();
+        $data->title = $collaborate->title;
+        $data->submission = $record->submission;
+        $user = $DB->get_record('user', ['id' => $record->userid], '*', MUST_EXIST);
+        $data->firstname = $user->firstname;
+        $data->lastname = $user->lastname;
+        $data->grade = $record->grade;
+        return $data;
+    }
+    /**
      * retrieve a submission record from the DB.
      *
      * @param int $cid our collaborate instance id.
@@ -126,10 +144,28 @@ class submissions {
             $user = $DB->get_record('user', ['id' => $record->userid], '*', MUST_EXIST);
             $data['firstname'] = $user->firstname;
             $data['lastname'] = $user->lastname;
-            $data['grade'] = $record->grade;
+            $data['grade'] = ($record->grade == 0) ? '-' : $record->grade;
+
+            // Add a URL to the grading page.
+            $g = new \moodle_url('/mod/collaborate/grading.php', ['cid' => $collaborate->id,
+                    'sid' => $record->id]);
+            $data['gradelink'] = $g->out(false);
+            $data['gradetext'] = get_string('grade', 'mod_collaborate');
+
             $submissions[] = $data;
         }
 
         return $submissions;
+    }
+    /**
+     * Given a submission id, update the grade field
+     *
+     * @param int $sid the submission id.
+     * @param int $grade the grade.
+     * @return An array of records.
+     */
+    public static function update_grade($sid, $grade) {
+        global $DB;
+        $DB->set_field('collaborate_submissions', 'grade', $grade, ['id' => $sid]);
     }
 }

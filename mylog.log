@@ -27,3 +27,425 @@ Config: stdClass Object
     [version] => 2020052512
 )
 
+Collaborate:  stdClass Object
+(
+    [id] => 1
+    [course] => 8
+    [name] => Test collaborate
+    [intro] => <p>This is what we have to do:</p><p><img src="@@PLUGINFILE@@/uninstalling.PNG" alt="uninstall" class="img-responsive atto_image_button_text-bottom" width="400" height="265"><br></p>
+    [introformat] => 1
+    [title] => This is a test
+    [instructionsa] => <p>5445 46456 456 4564</p><p><img src="@@PLUGINFILE@@/social%20history%20explorartion.fw.png" alt="a bunch of people" class="img-responsive atto_image_button_text-bottom" width="500" height="127"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p>This is a test fro partner B</p><p>Here is your picture to comment on:</p><p><img src="@@PLUGINFILE@@/MoodleBlocks.fw.png" alt="blocks" class="img-responsive atto_image_button_text-bottom" width="456" height="232"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1589338721
+    [timemodified] => 1590381681
+    [grade] => 100
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 630
+    [course] => 8
+    [module] => 27
+    [instance] => 1
+    [section] => 63
+    [idnumber] => 
+    [added] => 1589338721
+    [score] => 0
+    [indent] => 0
+    [visible] => 1
+    [visibleoncoursepage] => 1
+    [visibleold] => 1
+    [groupmode] => 0
+    [groupingid] => 0
+    [completion] => 1
+    [completiongradeitemnumber] => 
+    [completionview] => 0
+    [completionexpected] => 0
+    [showdescription] => 0
+    [availability] => 
+    [deletioninprogress] => 0
+    [name] => Test collaborate
+    [modname] => collaborate
+)
+

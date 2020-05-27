@@ -25,8 +25,10 @@
 
 use \core\output\notification;
 use \mod_collaborate\local\submissions;
+use \mod_collaborate\local\debugging;
 
 require_once('../../config.php');
+require_once('../../lib/formslib.php');
 
 // The form class.
 
@@ -69,6 +71,8 @@ $cm = get_coursemodule_from_instance('collaborate', $cid, $courseid, false, MUST
 $course = $DB->get_record('course', ['id' => $courseid], '*', MUST_EXIST);
 $context = context_module::instance($cm->id);
 
+debugging::logit('Collaborate:  ', $cm);
+
 // Set the page URL.
 $PAGE->set_url('/mod/collaborate/grading.php', ['cid' => $cid, 'sid' => $sid]);
 
@@ -103,7 +107,7 @@ if ($data = $mform->get_data()) {
 // Call the renderer to get the html for the page.
 $renderer = $PAGE->get_renderer('mod_collaborate');
 echo $OUTPUT->header();
-echo $renderer->render_submission_to_grade($submission, $context, $cid, $sid);
+echo $renderer->render_submission_to_grade($submission, $context, $sid);
 
 // Show the grading form.
 $mform->display();
