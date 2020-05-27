@@ -93,3 +93,8 @@ $string['gradingheader'] = 'Grade a submission';
 $string['currentgrade'] = 'Current grade: ';
 $string['user'] = 'User: ';
 $string['grade_saved'] = 'Grade saved';
+
+// Tasks etc.
+$string['namechange'] = 'Change module name';
+$string['action'] = 'Action';
+$string['edit'] = 'Edit module name';

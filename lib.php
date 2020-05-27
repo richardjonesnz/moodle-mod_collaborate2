@@ -590,6 +590,8 @@ function collaborate_extend_navigation(navigation_node $navref, stdClass $course
  * @param settings_navigation $settingsnav complete settings navigation tree
  * @param navigation_node $collaboratenode collaborate administration node
  */
-function collaborate_extend_settings_navigation(settings_navigation $settingsnav, navigation_node $collaboratenode=null) {
-    // TODO Delete this function and its docblock, or implement it.
+function collaborate_extend_settings_navigation(settings_navigation $settingsnav, navigation_node $collaboratenode = null) {
+    global $PAGE;
+    $namechange_url = new moodle_url('/mod/collaborate/namechanger.php',['courseid'=>$PAGE->course->id]);
+    $collaboratenode->add(get_string('namechange', 'mod_collaborate'), $namechange_url);
 }

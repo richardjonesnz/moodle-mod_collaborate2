@@ -16,9 +16,9 @@
 }}
 
 {{!
-    @template mod_collaborate/pagerow
+    @template mod_collaborate/namechangeform
 
-    Renders the body of the reports table
+    Template for the submissions page with instructions and submission form
 
     Classes required for JS:
     * none
@@ -28,21 +28,13 @@
 
     Example context (json):
         {
-         "id": "My heading",
-         "title": "Student A",
-         "submission": "My submission text",
-         "firstname": "Aroha",
-         "lastname": "Royal",
-         "grade": "100",
-         "gradetext": "grade submission"
+         "form": "An html form"
         }
 }}
-<tr class="danger">
-  <td>{{id}}</td>
-  <td>{{title}}</td>
-  <td>{{#shortentext}} 250, {{submission}} {{/shortentext}}</td>
-  <td>{{firstname}}</td>
-  <td>{{lastname}}</td>
-  <td>{{grade}}</td>
-  <td><a href="{{gradelink}}">{{gradetext}}</a></td>
-</tr>
+<div class = "container">
+  <div class="card">
+    <div class="card-body">
+        {{{form}}}
+    </div>
+  </div>
+</div>

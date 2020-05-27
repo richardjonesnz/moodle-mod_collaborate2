@@ -178,4 +178,72 @@ class mod_collaborate_renderer extends plugin_renderer_base {
         return $this->render_from_template('mod_collaborate/submissiontograde', $data);
 
     }
+
+    /**
+     * Displays the form to change a module name.
+     *
+     * @param object $mform the form to display
+     * @return none
+     */
+    public function render_namechange_form($mform) {
+
+        $data = new stdClass();
+        $data->form = $mform->render();
+
+        // Display the page content.
+        echo $this->output->header();
+        echo $this->render_from_template('mod_collaborate/namechangeform', $data);
+        echo $this->output->footer();
+    }
+
+    /**
+     * Displays the list of collaborate modules in a course.
+     *
+     * @param array of objects $collaborates list of collaborate modules in course
+     * @param object $course the course
+     * @return none
+     */
+    public function show_namechanger_page($collaborates, $course) {
+
+        $data = new stdClass();
+
+        $data->heading = get_string('modulenameplural', 'mod_collaborate');
+
+        // Table headers.
+        $headers = array();
+
+        if ($course->format == 'weeks') {
+            $headers[] = get_string('week');
+
+        } elseif ($course->format == 'topics') {
+            $headers[] = get_string('topic');
+        } else {
+            $headers[] = ' ';
+        }
+        $headers[] = get_string('name');
+        $headers[] = get_string('action', 'mod_collaborate');
+        $data->headers = $headers;
+
+        $data->rows = array();
+
+        // Table rows.
+        foreach ($collaborates as $collaborate) {
+            $row = array();
+            $row['name'] = format_string($collaborate->name, true);
+            // Dim link if hidden item.
+            $row['class'] = (!$collaborate->visible) ? 'text-muted' : ' ';
+            // Section number or week may be present
+            $row['section'] = $collaborate->section;
+            // Link to edit form.
+            $editlink = new \moodle_url($this->page->url, ['action' => 'edit', 'actionitem' => $collaborate->id]);
+            $row['editurl'] = $editlink->out(false);
+
+            $data->rows[] = $row;
+        }
+        // Display the table.
+        echo $this->output->header();
+        echo $this->render_from_template('mod_collaborate/namechangepage', $data);
+        echo $this->output->footer();
+
+    }
 }
