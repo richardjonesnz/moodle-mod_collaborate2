@@ -38,9 +38,9 @@ class collaborate_grading_form extends moodleform {
         global $CFG;
         $mform = $this->_form;
 
-        // grades available.
+        // grades available.  Max grade now set in our settings form.
         $grades = array();
-        for ($m = 0; $m <= 100; $m++) {
+        for ($m = 0; $m <= $this->_customdata['maxgrade']; $m++) {
             $grades[$m] = '' . $m;
         }
         $mform->addElement('select', 'grade',
@@ -71,7 +71,7 @@ $cm = get_coursemodule_from_instance('collaborate', $cid, $courseid, false, MUST
 $course = $DB->get_record('course', ['id' => $courseid], '*', MUST_EXIST);
 $context = context_module::instance($cm->id);
 
-debugging::logit('Collaborate:  ', $cm);
+debugging::logit('Collaborate:  ', $collaborate);
 
 // Set the page URL.
 $PAGE->set_url('/mod/collaborate/grading.php', ['cid' => $cid, 'sid' => $sid]);
@@ -89,17 +89,23 @@ $reportsurl = new moodle_url('/mod/collaborate/reports.php', ['cid' => $cid]);
 
 // Get the submission information.
 $submission = submissions::get_submission_to_grade($collaborate, $sid);
-$mform = new collaborate_grading_form(null, ['cid' => $cid,'sid' => $sid]);
+$mform = new collaborate_grading_form(null, ['cid' => $cid,'sid' => $sid, 'maxgrade' => $collaborate->grade]);
 
 if ($mform->is_cancelled()) {
     redirect($reportsurl, get_string('cancelled'), 2, notification::NOTIFY_INFO);
 }
 
 if ($data = $mform->get_data()) {
+
     // Set any existing grade to the form.
     $mform->set_data($data);
+
     // Update the submission data.
     submissions::update_grade($sid, $data->grade);
+
+    // Update the gradebook.
+    collaborate_update_grades($collaborate);
+
     redirect($reportsurl, get_string('grade_saved', 'mod_collaborate'), 2,
             notification::NOTIFY_SUCCESS);
 }

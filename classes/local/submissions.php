@@ -168,4 +168,23 @@ class submissions {
         global $DB;
         $DB->set_field('collaborate_submissions', 'grade', $grade, ['id' => $sid]);
     }
+    /**
+     * Get the users current grade.  We've included a strategy here (max score) just to illustrate
+     * the possibilities - in fact we will have only one attempt per user in our module.
+     *
+     * @param object $attempts detail of a users attempts (see lib.php: collaborate_get_user_grades).
+     * @return int a grade which may be calculated from multiple attempts.
+     */
+
+    public static function grade_user($attempts) {
+        global $DB;
+
+        // We could use different strategies here.
+        $maxscore = 0;
+        foreach ($attempts as $attempt) {
+            $grade = $attempt->grade;
+            $maxscore = ($grade > $maxscore) ? $grade : $maxscore;
+        }
+        return $maxscore;
+    }
 }
