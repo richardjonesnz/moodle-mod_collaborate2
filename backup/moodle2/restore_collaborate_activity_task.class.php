@@ -64,6 +64,12 @@ class restore_collaborate_activity_task extends restore_activity_task {
         $contents = array();
 
         $contents[] = new restore_decode_content('collaborate', array('intro'), 'collaborate');
+        $contents[] = new restore_decode_content('collaborate', array('instructionsa'),
+                'collaborate');
+        $contents[] = new restore_decode_content('collaborate', array('instructionsb'),
+                'collaborate');
+        $contents[] = new restore_decode_content('collaborate_submissions', array('submission'),
+                'collaborate_submission');
 
         return $contents;
     }
@@ -94,6 +100,7 @@ class restore_collaborate_activity_task extends restore_activity_task {
         $rules[] = new restore_log_rule('collaborate', 'add', 'view.php?id={course_module}', '{collaborate}');
         $rules[] = new restore_log_rule('collaborate', 'update', 'view.php?id={course_module}', '{collaborate}');
         $rules[] = new restore_log_rule('collaborate', 'view', 'view.php?id={course_module}', '{collaborate}');
+        $rules[] = new restore_log_rule('collaborate', 'edit', 'view.php?id={course_module}', '{collaborate}');
 
         return $rules;
     }
@@ -111,7 +118,7 @@ class restore_collaborate_activity_task extends restore_activity_task {
     static public function define_restore_log_rules_for_course() {
         $rules = array();
 
-        // Fix old wrong uses (missing extension)
+        // Fix old wrong uses (missing extension).
         $rules[] = new restore_log_rule('collaborate', 'view all', 'index?id={course}', null,
                                         null, null, 'index.php?id={course}');
         $rules[] = new restore_log_rule('collaborate', 'view all', 'index.php?id={course}', null);
