@@ -576,3 +576,71 @@ Collaborate:  stdClass Object
     [grade] => 50
 )
 
+Collaborate:  stdClass Object
+(
+    [id] => 1
+    [course] => 4
+    [name] => Test Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;">This is a test.</p><p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/listaction.PNG" alt="lists" class="img-responsive atto_image_button_text-bottom" width="600" height="247"><br></p>
+    [introformat] => 1
+    [title] => 
+    [instructionsa] => <p dir="ltr" style="text-align: left;">There are your instructions:</p><p dir="ltr" style="text-align: left;">A: <img src="@@PLUGINFILE@@/save_submission_form.PNG" alt="save" class="img-responsive atto_image_button_text-bottom" width="853" height="406"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p dir="ltr" style="text-align: left;">This is B's submission</p><p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/Charnel%20House%20at%20St%20Helens%20Church%2C%20Cliffe%2C%20Kent%2C%20England%2C%202015-05-06-5136.jpg" alt="house" class="img-responsive atto_image_button_text-bottom" width="450" height="285"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1592696562
+    [timemodified] => 0
+    [grade] => 100
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 1
+    [course] => 4
+    [name] => Test Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;">This is a test.</p><p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/listaction.PNG" alt="lists" class="img-responsive atto_image_button_text-bottom" width="600" height="247"><br></p>
+    [introformat] => 1
+    [title] => 
+    [instructionsa] => <p dir="ltr" style="text-align: left;">There are your instructions:</p><p dir="ltr" style="text-align: left;">A: <img src="@@PLUGINFILE@@/save_submission_form.PNG" alt="save" class="img-responsive atto_image_button_text-bottom" width="853" height="406"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p dir="ltr" style="text-align: left;">This is B's submission</p><p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/Charnel%20House%20at%20St%20Helens%20Church%2C%20Cliffe%2C%20Kent%2C%20England%2C%202015-05-06-5136.jpg" alt="house" class="img-responsive atto_image_button_text-bottom" width="450" height="285"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1592696562
+    [timemodified] => 0
+    [grade] => 100
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 1
+    [course] => 4
+    [name] => Test Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;">This is a test.</p><p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/listaction.PNG" alt="lists" class="img-responsive atto_image_button_text-bottom" width="600" height="247"><br></p>
+    [introformat] => 1
+    [title] => 
+    [instructionsa] => <p dir="ltr" style="text-align: left;">There are your instructions:</p><p dir="ltr" style="text-align: left;">A: <img src="@@PLUGINFILE@@/save_submission_form.PNG" alt="save" class="img-responsive atto_image_button_text-bottom" width="853" height="406"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p dir="ltr" style="text-align: left;">This is B's submission</p><p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/Charnel%20House%20at%20St%20Helens%20Church%2C%20Cliffe%2C%20Kent%2C%20England%2C%202015-05-06-5136.jpg" alt="house" class="img-responsive atto_image_button_text-bottom" width="450" height="285"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1592696562
+    [timemodified] => 0
+    [grade] => 100
+)
+
+Collaborate:  stdClass Object
+(
+    [id] => 1
+    [course] => 4
+    [name] => Test Collaborate
+    [intro] => <p dir="ltr" style="text-align: left;">This is a test.</p><p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/listaction.PNG" alt="lists" class="img-responsive atto_image_button_text-bottom" width="600" height="247"><br></p>
+    [introformat] => 1
+    [title] => 
+    [instructionsa] => <p dir="ltr" style="text-align: left;">There are your instructions:</p><p dir="ltr" style="text-align: left;">A: <img src="@@PLUGINFILE@@/save_submission_form.PNG" alt="save" class="img-responsive atto_image_button_text-bottom" width="853" height="406"><br></p>
+    [instructionsaformat] => 1
+    [instructionsb] => <p dir="ltr" style="text-align: left;">This is B's submission</p><p dir="ltr" style="text-align: left;"><img src="@@PLUGINFILE@@/Charnel%20House%20at%20St%20Helens%20Church%2C%20Cliffe%2C%20Kent%2C%20England%2C%202015-05-06-5136.jpg" alt="house" class="img-responsive atto_image_button_text-bottom" width="450" height="285"><br></p>
+    [instructionsbformat] => 1
+    [timecreated] => 1592696562
+    [timemodified] => 0
+    [grade] => 100
+)
+
